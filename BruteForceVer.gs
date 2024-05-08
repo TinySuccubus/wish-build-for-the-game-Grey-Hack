@@ -17,7 +17,8 @@ else
     counter=chkpnt.get_content.split("LINE")[0].val
     maxSize=chkpnt.get_content.split("LINE")[1].val
 end if
-
+computer.touch(wishFolderPath,"_.src")
+sourceFile = computer.File(wishFolderPath + "/" + "_.src")
 letters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 lettersLen = letters.len
 dt=time
